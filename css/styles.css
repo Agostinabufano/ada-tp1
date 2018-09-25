@@ -1,3 +1,116 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+}
 
+.title {
+  display: flex;
+  justify-content: center;
+}
+.title h1 {
+  font-family: "Handlee", cursive;
+  color: #f3602a;
+}
+
+.list-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.list-nav .list-cat1 {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #f3602a;
+  font-size: 15px;
+}
+.list-nav .list-cat {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #bbb7b7;
+}
+
+.list-nav:hover {
+  cursor: pointer;
+}
+
+.list-cat2 {
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #bbb7b7;
+}
+.list-cat2 .list-cat2::after {
+  content: "";
+}
+
+.main {
+  width: 100%;
+}
+.main .picture1 {
+  width: 100%;
+}
+
+.container-list {
+  display: flex;
+  justify-content: left;
+  font-size: 15px;
+}
+.container-list .navs {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navs:last-of-type {
+  color: #928f8f;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.redes {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes .iconos {
+  list-style: none;
+  font-size: 25px;
+}
+
+.icon1 {
+  color: blue;
+  border-radius: 20%;
+  margin: 5px;
+}
+
+.icon2 {
+  color: #49b4b8;
+  margin: 5px;
+}
+
+.icon3 {
+  color: #c54c4c;
+  margin: 5px;
+}
+
+.icon4 {
+  color: #462525;
+  margin: 5px;
+}
+
+.icon5 {
+  color: #df4a4a;
+  margin: 5px;
+}
+
+.second-pic {
+  width: 500px;
+  border-radius: 10%;
+}
 
 /*# sourceMappingURL=styles.css.map */

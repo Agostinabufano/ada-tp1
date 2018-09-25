@@ -1,0 +1,121 @@
+ $orange: rgb(243, 96, 42);   
+ 
+ body {
+     width: 100%;
+ }
+.title {
+    display: flex;
+    justify-content: center;
+    h1 {
+        font-family: 'Handlee', cursive;
+        color: $orange;
+    }
+}
+
+.list-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    .list-cat1 {
+        margin-right: 15px;
+        margin-left: 15px;
+        color: $orange;
+        font-size: 15px;
+    }
+    .list-cat {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 15px;
+        color: rgb(187, 183, 183);
+    }
+}
+
+.list-nav:hover {
+    cursor: pointer;
+}
+
+.list-cat2 {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: rgb(187, 183, 183);
+    .list-cat2::after {
+        content: "\f0d7";
+    }
+}
+
+.main {
+    width: 100%;
+    .picture1 {
+        width: 100%;
+    }
+}
+
+.container-list {
+    display: flex;
+    justify-content: left;
+    font-size: 15px;
+    .navs{
+        list-style: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}    
+
+.navs:last-of-type {
+    color: rgb(146, 143, 143);
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 60px;
+}
+
+.redes {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    .iconos {
+        list-style: none;
+        font-size: 25px;
+    } 
+}   
+
+.icon1 {
+    color: blue;
+    border-radius: 20%;
+    margin: 5px;
+}
+
+.icon2 {
+    color: rgb(73, 180, 184);
+    margin: 5px;
+}
+
+.icon3 {
+    color: rgb(197, 76, 76);
+    margin: 5px;
+}
+
+.icon4 {
+    color: rgb(70, 37, 37);
+    margin: 5px;
+}
+
+.icon5 {
+    color:rgb(223, 74, 74);
+    margin: 5px;
+}
+
+.second-pic {
+    width: 500px;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
