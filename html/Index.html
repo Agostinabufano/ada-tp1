@@ -2,26 +2,30 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0' />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Home</title>
   </head>
   <body>
     <header>
-        <div><h1>Mi blog de cocina</h1></div>
-        <nav>
-            <ul class="list-nav"> 
-                <li class="list-cat">HOME</li>
-                <li class="list-cat">PLATOS</li>
-                    <ul>
-                        <li class="list-cat">Ensalada</li>
-                        <li class="list-cat">Carne</li>
-                        <li class="list-cat">Helados</li>
-                    </ul>
-                <li class="list-cat">SOBRE MÍ</li>
-                <li class="list-cat">CONTACTO</li>    
+      <div class="title">
+        <h1>Mi Blog de Cocina</h1>
+      </div>
+      <nav>
+        <ul class="list-nav">
+          <li class="list-cat1">HOME</li>
+          <li class="dropdown">PLATOS<i class="fas fa-caret-down"></i></li>
+            <ul class="dropdown-content">
+                <li class="list-cat">ENSALADA</li>
+                <li class="list-cat">CARNE</li>
+                <li class="list-cat">HELADOS</li>
             </ul>
-        </nav>
-    </header>  
+          <li class="list-cat1">SOBRE MÍ</li>
+          <li class="list-cat1">CONTACTO</li>
+        </ul>
+    </nav>
+    </header>
     <section class="carrousel">
         <div class="carrousel-img">
             <img src="../imagenes/img-1.jpg" alt="">
@@ -69,7 +73,7 @@
             <p class="news">NEWSLETTER</p>
         </div>
     </section>
-    <section class="recipes-links">        
+    <section class="recipes-links">
         <article>
             <div>
                 <img src="../imagenes/nota1.JPG" alt="">
@@ -108,31 +112,34 @@
               </div>
             </div>
     </section>
-    <footer>
+    <footer >
+      <div class="redes-sociales">
         <div class="redes">
-            <i class="fab fa-facebook-f"></i>
-            <a href="#">FACEBOOK</a>
+          <i class="fab fa-facebook-f"></i>
+          <p class="re">FACEBOOK</p>
         </div>
         <div class="redes">
-            <i class="fab fa-twitter"></i>
-            <a href="#">TWITTER</a>
+          <i class="fab fa-twitter"></i>
+          <p class="re">TWITTER</p>
         </div>
         <div class="redes">
-            <i class="fab fa-google-plus-g"></i>
-            <a href="#">GOOGLE+</a>
+          <i class="fab fa-google-plus-g"></i>
+          <p class="re">GOOGLE</p>
         </div>
         <div class="redes">
-            <i class="fab fa-linkedin"></i>
-            <a href="#">LINKEDIN</a>
+          <i class="fab fa-linkedin"></i>
+          <p class="re">LINKEDIN</p>
         </div>
         <div class="redes">
-            <i class="fab fa-instagram"></i>
-            <a href="#">INSTAGRAM</a>
+          <i class="fab fa-instagram"></i>
+          <p class="re">INSTAGRAM</p>
         </div>
         <div class="redes">
-            <i class="fab fa-youtube"></i>
-            <a href="#">YOUTUBE</a>
+          <i class="fab fa-youtube"></i>
+          <p class="re">YOUTUBE</p>
         </div>
+      </div>
     </footer>
+    <hr>
   </body>
 </html>
