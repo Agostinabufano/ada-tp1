@@ -1,4 +1,145 @@
 body {
+<<<<<<< HEAD
+  margin: 0;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  color: #fc784f;
+  text-align: center;
+}
+
+.list-nav {
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30%;
+  margin-right: 30%;
+  position: relative;
+}
+.list-nav ul {
+  list-style: none;
+}
+.list-nav li ul {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+.list-nav li:hover ul {
+  display: block;
+  color: black;
+}
+.list-nav .list-cat:hover {
+  color: #fc784f;
+}
+
+.carrousel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.carrousel .carrousel-img {
+  width: 24%;
+}
+.carrousel .carrousel-img img {
+  width: 100%;
+}
+.carrousel .carrousel-img:first-of-type {
+  margin-left: 0;
+}
+.carrousel .carrousel-img:last-of-type {
+  margin-right: 0;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+.recipes .recipes-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.recipes .recipes-sec img {
+  border-radius: 10%;
+  width: 90%;
+}
+.recipes .recipes-sec img .button-center {
+  position: absolute;
+  z-index: 1;
+  /*va con position, poner con relative y absolute*/
+}
+
+.vid-bio {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.vid-bio .vid {
+  width: 60%;
+  display: flex;
+  flex-direction: nowrap;
+}
+.vid-bio .vid video {
+  width: 100%;
+}
+.vid-bio .vid figcaption {
+  width: 100%;
+}
+.vid-bio .bio {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.vid-bio .bio .photo img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+article {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 50%;
+}
+article .recipe-img {
+  width: 40%;
+}
+article .recipe-img img {
+  border-radius: 10%;
+}
+article .recipe-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+article .recipe-info .recipe-date {
+  color: darkslategray;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+article .recipe-info .recipe-name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+}
+article .recipe-info .recipe-desc {
+  color: darkslategray;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+article .recipe-info .news {
+  border: none;
+  color: #fc784f;
+  text-align: center;
+  color: darkslategray;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  border-radius: 10%;
+=======
   width: 100%;
   margin: 0%;
   font-size: 15px;
@@ -289,6 +430,7 @@ hr {
   width: 70%;
   opacity: 0.5;
   filter: Alpha(opacity=50);
+>>>>>>> 411b6b394b62246416bbec333b6e85f090b0a04b
 }
 
 /*# sourceMappingURL=styles.css.map */

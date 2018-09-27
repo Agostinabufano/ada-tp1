@@ -2,8 +2,11 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Indie+Flower" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Index</title>
   </head>
   <body>
     <header>
@@ -11,12 +14,13 @@
         <nav>
             <ul class="list-nav"> 
                 <li class="list-cat">HOME</li>
-                <li class="list-cat">PLATOS</li>
+                <li class="list-cat">PLATOS
                     <ul>
                         <li class="list-cat">Ensalada</li>
                         <li class="list-cat">Carne</li>
                         <li class="list-cat">Helados</li>
                     </ul>
+                </li>
                 <li class="list-cat">SOBRE MÍ</li>
                 <li class="list-cat">CONTACTO</li>    
             </ul>
@@ -39,27 +43,33 @@
     <section class="recipes">
         <div class="recipes-sec">
             <img src="../imagenes/platos.jpeg" alt="">
-            <input type= "button">
-        </div>
+                <div class="button-center"> 
+                <input type= "button" value="PLATOS">
+                </div>
+            </div>
         <div class="recipes-sec">
             <img src="../imagenes/recetas.JPG" alt="">
-            <input type="button">
+            <div class="button-center"> 
+            <input type="button" value="RECETAS">
+            </div>
         </div>
         <div class="recipes-sec">
             <img src="../imagenes/exoticos.JPG" alt="">
-            <input type="button">
+            <div class="button-center"> 
+            <input type="button" value="EXÓTICOS">
+            </div>
         </div>
     </section>
     <section class="vid-bio">
-        <div>
-            <video src=""></video>
+        <div class="vid">
+            <video src="https://www.youtube.com/watch?v=A1xoahQGMgk"></video>
             <figcaption>20 de abril | ¿Cómo preparar las mejores hamburguesas?</figcaption>
         </div>
         <div class="bio">
             <h2 class="bio-title">Sobre mí</h2>
         </div>
-        <div>
-            <img src="" alt="">
+        <div class="photo">
+            <img src="../imagenes/foto.jpg" alt="">
         </div>
         <div>
             <h3 class="bio-name">Natalia Guida</h3>
@@ -71,17 +81,15 @@
     </section>
     <section class="recipes-links">        
         <article>
-            <div>
+            <div class="recipe-img">
                 <img src="../imagenes/nota1.JPG" alt="">
             </div>
-            <div>
-                <div>
+            <div class="recipe-info">
                     <span class="recipe-date">By Maria | Mayo 19, 2017</span>
                     <span class="recipe-name">Delicias dulces</span>
                     <span class="recipe-desc">En este artículo van a poder ver una receta muy simple, sana y muy rica!</span>
-                    <input type="button" class="news">
-                </div>
-                <div class="info">
+                    <input type="button" class="news" value="Leer Más">
+            <div class="info">
                   <h5></h5>
                   <p></p>
                 </div>
