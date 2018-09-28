@@ -1,145 +1,4 @@
 body {
-<<<<<<< HEAD
-  margin: 0;
-}
-
-h1 {
-  font-family: "Indie Flower", cursive;
-  color: #fc784f;
-  text-align: center;
-}
-
-.list-nav {
-  font-family: "IBM Plex Mono", monospace;
-  display: flex;
-  justify-content: space-around;
-  margin-left: 30%;
-  margin-right: 30%;
-  position: relative;
-}
-.list-nav ul {
-  list-style: none;
-}
-.list-nav li ul {
-  display: none;
-  position: absolute;
-  background-color: white;
-}
-.list-nav li:hover ul {
-  display: block;
-  color: black;
-}
-.list-nav .list-cat:hover {
-  color: #fc784f;
-}
-
-.carrousel {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.carrousel .carrousel-img {
-  width: 24%;
-}
-.carrousel .carrousel-img img {
-  width: 100%;
-}
-.carrousel .carrousel-img:first-of-type {
-  margin-left: 0;
-}
-.carrousel .carrousel-img:last-of-type {
-  margin-right: 0;
-}
-
-.recipes {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-}
-.recipes .recipes-sec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.recipes .recipes-sec img {
-  border-radius: 10%;
-  width: 90%;
-}
-.recipes .recipes-sec img .button-center {
-  position: absolute;
-  z-index: 1;
-  /*va con position, poner con relative y absolute*/
-}
-
-.vid-bio {
-  display: flex;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.vid-bio .vid {
-  width: 60%;
-  display: flex;
-  flex-direction: nowrap;
-}
-.vid-bio .vid video {
-  width: 100%;
-}
-.vid-bio .vid figcaption {
-  width: 100%;
-}
-.vid-bio .bio {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-}
-.vid-bio .bio .photo img {
-  width: 40%;
-  border-radius: 50%;
-}
-
-article {
-  display: flex;
-  margin-left: 10%;
-  margin-right: 50%;
-}
-article .recipe-img {
-  width: 40%;
-}
-article .recipe-img img {
-  border-radius: 10%;
-}
-article .recipe-info {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-}
-article .recipe-info .recipe-date {
-  color: darkslategray;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-}
-article .recipe-info .recipe-name {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 20px;
-}
-article .recipe-info .recipe-desc {
-  color: darkslategray;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-}
-article .recipe-info .news {
-  border: none;
-  color: #fc784f;
-  text-align: center;
-  color: darkslategray;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  border-radius: 10%;
-=======
   width: 100%;
   margin: 0%;
   font-size: 15px;
@@ -163,25 +22,27 @@ article .recipe-info .news {
   padding: 15px 15px;
   position: relative;
 }
-.list-nav .list-cat1 {
+.list-nav:hover {
+  cursor: pointer;
+}
+
+.categoria-1 {
   margin-left: 10px;
   margin-right: 10px;
   color: #929090;
   font-size: 15px;
 }
-
-.list-cat1:first-of-type {
+.categoria-1:first-of-type {
   color: orangered;
-}
-
-.list-nav:hover {
-  cursor: pointer;
 }
 
 .dropdown {
   margin-left: 10px;
   margin-right: 10px;
   color: #929090;
+}
+.dropdown .fas.fa-caret-down {
+  margin-left: 5px;
 }
 .dropdown .dropdown-content {
   position: absolute;
@@ -201,7 +62,7 @@ article .recipe-info .news {
   color: #929090;
 }
 
-.list-cat:hover {
+.categoria-2:hover {
   color: orangered;
 }
 
@@ -262,7 +123,7 @@ article .recipe-info .news {
 }
 
 .face {
-  background-color: #0909c7;
+  background-color: #3b5998;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -278,7 +139,7 @@ article .recipe-info .news {
 }
 
 .twiter {
-  background-color: #49b4b8;
+  background-color: #55acee;
   margin: 20px;
   width: 25px;
   height: 25px;
@@ -294,7 +155,7 @@ article .recipe-info .news {
 }
 
 .google {
-  background-color: #c54c4c;
+  background-color: #dd4b39;
   margin: 20px;
   width: 25px;
   height: 25px;
@@ -310,7 +171,7 @@ article .recipe-info .news {
 }
 
 .insta {
-  background-color: #462525;
+  background-color: #8f6247;
   margin: 20px;
   width: 25px;
   height: 25px;
@@ -326,7 +187,7 @@ article .recipe-info .news {
 }
 
 .pinterest {
-  background-color: #df4a4a;
+  background-color: #cb2027;
   margin: 20px;
   width: 25px;
   height: 25px;
@@ -401,10 +262,10 @@ h4 {
   margin-left: 20px;
 }
 
-.puntito {
+.ingredientes {
   color: #f3602a;
 }
-.puntito .grey {
+.ingredientes .grey {
   color: #929090;
   line-height: 2em;
 }
@@ -420,8 +281,68 @@ h4 {
   opacity: 0.5;
   filter: Alpha(opacity=50);
 }
-.redes-sociales .re {
-  margin-left: 5px;
+.redes-sociales .contact {
+  margin-left: 10px;
+}
+
+.redes-f {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes-f:hover {
+  color: #02194b;
+  cursor: pointer;
+}
+
+.redes-t {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes-t:hover {
+  color: #55acee;
+  cursor: pointer;
+}
+
+.redes-g {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes-g:hover {
+  cursor: pointer;
+  color: #cb2027;
+}
+
+.redes-li {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes-li:hover {
+  cursor: pointer;
+  color: #007bb5;
+}
+
+.redes-i {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes-i:hover {
+  color: #8f6247;
+  cursor: pointer;
+}
+
+.redes-y {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.redes-y:hover {
+  color: #ff0000;
+  cursor: pointer;
 }
 
 hr {
@@ -430,7 +351,6 @@ hr {
   width: 70%;
   opacity: 0.5;
   filter: Alpha(opacity=50);
->>>>>>> 411b6b394b62246416bbec333b6e85f090b0a04b
 }
 
 /*# sourceMappingURL=styles.css.map */
