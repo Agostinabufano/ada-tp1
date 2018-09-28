@@ -17,11 +17,18 @@ body {
     }
 }
 
+// h1 {
+//     font-family: 'Indie Flower', cursive;
+//     color: #fc784f;
+//     text-align: center;
+// }
+
 .list-nav {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 15px 15px;
+    position: relative;
     .list-cat1 {
         margin-left: 10px;
         margin-right: 10px;
@@ -42,18 +49,58 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     color: rgb(146, 144, 144);
-    position: relative;
+  //  position: relative;
+    .dropdown-content {
+        position: absolute;
+        display: none;
+        right: 0px;
+        top: 0px;
+
+
+        // min-width: 160px;
+        // box-shadow: 0px 8px 16px 0px;
+        // padding: 12px 16px;
+        color: rgb(146, 144, 144);
+        background-color: white;
+    }
 }
 
-.dropdown-content {
-    position: absolute;
-    display: none;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px;
-    padding: 12px 16px;
+.dropdown:hover .dropdown-content{
+    display: block;
+    color: black;
+    }
 
-    color: rgb(146, 144, 144);
+.list-cat:hover {
+  color: #fc784f;
 }
+
+// ----------------------------------
+
+// .list-nav {
+//   font-family: 'IBM Plex Mono', monospace;
+//   display: flex;
+//   justify-content: space-around;
+//   margin-left: 30%;
+//   margin-right: 30%;
+//   position: relative;
+//   ul {
+//     list-style: none;
+//   }
+//   li{
+//     ul {
+//     display: none;
+//     position: absolute;
+//     background-color: white;
+//   	}
+// 	}
+//     li:hover ul{
+//       display: block;
+//       color: black;
+//       }
+//     .list-cat:hover {
+//       color: #fc784f;
+//   }
+// }
 
 // .dropdown:hover .dropdown-content {
 //     display: block;
@@ -290,4 +337,241 @@ hr {
     width: 70%;
     opacity: 0.5;
     filter: Alpha(opacity=50);
+}
+
+// ---------------------------------------------------------------------------------------------------
+// h1 {
+//     font-family: 'Indie Flower', cursive;
+//     color: #fc784f;
+//     text-align: center;
+// }
+
+// .list-nav {
+//   font-family: 'IBM Plex Mono', monospace;
+//   display: flex;
+//   justify-content: space-around;
+//   margin-left: 30%;
+//   margin-right: 30%;
+//   position: relative;
+//   ul {
+//     list-style: none;
+//   }
+//   li{
+//     ul {
+//     display: none;
+//     position: absolute;
+//     background-color: white;
+//   	}
+// 	}
+//     li:hover ul{
+//       display: block;
+//       color: black;
+//       }
+//     .list-cat:hover {
+//       color: #fc784f;
+//   }
+// }
+p {
+  margin: 0;
+}
+
+.carrousel {
+	display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2%;
+  .carrousel-img{
+    width: 24%;
+    img {
+      width: 100%;
+      }
+    }
+  .carrousel-img:first-of-type {
+    margin-left: 0;
+    }
+  .carrousel-img:last-of-type {
+    margin-right: 0;
+    }
+}
+
+.recipes-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  // margin-left: 10%;
+  // margin-right: 10%;
+  width: 80%;
+  .recipes-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	position: relative;
+  margin: 1%;
+  img{
+    border-radius: 10%;
+    width: 100%;
+    .button-center {
+      position: absolute;
+      text-align: center;
+      z-index: 1;
+      //ver por que no hace caso a los position
+      // z-index: 1; /*va con position, poner con relative y absolute*/
+      }
+    }
+  }
+}
+
+.bio {
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: auto;
+}
+
+.vid-bio {
+	display: flex;
+  justify-content: center;
+	width: 80%;
+  height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+
+.vid {
+		width: 65%;
+    height: auto;
+    margin: 1%;
+		// display: flex;
+		// flex-direction: nowrap; //no se ve el video
+    	iframe {
+  			width: 100%;
+        height: 100%;
+  		}
+    	figcaption {
+  			width: 100%;
+        font-size: 10px;
+  		}
+  	}
+
+.bio-title-box {
+  background-color: #FDE2DA;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    .bio-title {
+      font-size: 12px;
+      color: #7F7F7F;
+    }
+}
+
+.bio { //todo roto
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  .photo {
+    width: 65%;
+    border-radius: 50%;
+    margin-top: 10%;
+      img{
+      width: 100%;//no anda
+      border-radius: 50%;
+      }
+  }
+}
+
+  .bio-name-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+
+      .bio-name {
+        color: black;
+        font-size: 20px;
+        margin-top: 8%;
+        margin-bottom: 6%;
+      }
+      .bio-data {
+        color: #7F7F7F;
+        font-size: 13px;
+        margin-bottom: 10%;
+      }
+  }
+
+// .recipes-links {
+//   display: flex;
+//   justify-content: flex-start;
+//   width: 80%;
+// }
+
+.recipes-links {
+  // display: flex;
+  // justify-content: center;
+	width: 80%;
+  height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+  margin-top: 5%;
+   .articles {
+     width: 65%;
+     margin-left: 0;
+   }
+}
+
+article{
+	display: flex;
+  justify-content: flex-start;
+  margin-top: 2%;
+	margin-left: 0%;
+	margin-right: 0;
+  width: 100%;
+	.recipe-img {
+		width: 40%;
+		img {
+			border-radius: 10%;
+      width: 100%;
+		}
+	}
+	.recipe-info {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+    margin-left: 4%;
+		.recipe-date {
+			color: darkslategray;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 12px;
+		}
+		.recipe-name {
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 20px;
+		}
+		.recipe-desc {
+			color: darkslategray;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 12px;
+			}
+		.news {
+			border: none;
+			color: #fc784f;
+			text-align: center;
+			color: darkslategray;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 12px;
+			border-radius: 10%;
+		}
+	}
 }
