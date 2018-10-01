@@ -371,6 +371,47 @@ hr {
 //       color: #fc784f;
 //   }
 // }
+
+@mixin buttons() {
+    text-decoration: none;
+    font-family:  'IBM Plex Mono', monospace;
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    border: none;
+    background-color: wheat;
+}
+.recipes {
+ display: flex;
+ justify-content: space-around;
+ margin-left: 10%;
+ margin-right: 10%;
+ width: 80%;
+ .recipes-sec {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+    position: relative;
+ img{
+   border-radius: 10%;
+   width: 90%;
+    }
+    .button-center {
+        position: absolute;
+        z-index: 1;
+        .platos, .recetas, .exoticos {
+            @include buttons ();
+        }
+        .platos:hover, .recetas:hover, .exoticos:hover {
+            background-color: #fc784f;
+        }
+        }
+ }
+}
+
+
 p {
   margin: 0;
 }
@@ -394,37 +435,37 @@ p {
     }
 }
 
-.recipes-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.recipes {
-  display: flex;
-  justify-content: space-around;
-  // margin-left: 10%;
-  // margin-right: 10%;
-  width: 80%;
-  .recipes-sec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-	position: relative;
-  margin: 1%;
-  img{
-    border-radius: 10%;
-    width: 100%;
-    .button-center {
-      position: absolute;
-      text-align: center;
-      z-index: 1;
-      //ver por que no hace caso a los position
-      // z-index: 1; /*va con position, poner con relative y absolute*/
-      }
-    }
-  }
-}
+// .recipes-main {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+//
+// .recipes {
+//   display: flex;
+//   justify-content: space-around;
+//   // margin-left: 10%;
+//   // margin-right: 10%;
+//   width: 80%;
+//   .recipes-sec {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// 	position: relative;
+//   margin: 1%;
+//   img{
+//     border-radius: 10%;
+//     width: 100%;
+//     .button-center {
+//       position: absolute;
+//       text-align: center;
+//       z-index: 1;
+//       //ver por que no hace caso a los position
+//       // z-index: 1; /*va con position, poner con relative y absolute*/
+//       }
+//     }
+//   }
+// }
 
 .bio {
   // background-color: red;
@@ -458,6 +499,7 @@ p {
     	figcaption {
   			width: 100%;
         font-size: 10px;
+        color: #7F7F7F;
   		}
   	}
 
@@ -525,9 +567,10 @@ p {
 	margin-left: 10%;
 	margin-right: 10%;
   margin-top: 5%;
+  margin-bottom: 2%;
    .articles {
      width: 65%;
-     margin-left: 0;
+     margin-left: 1.5%;
    }
 }
 
@@ -538,6 +581,8 @@ article{
 	margin-left: 0%;
 	margin-right: 0;
   width: 100%;
+  border-top: 1.2px solid #d6d6c2;
+  padding-top: 4%;
 	.recipe-img {
 		width: 40%;
 		img {
@@ -545,33 +590,41 @@ article{
       width: 100%;
 		}
 	}
-	.recipe-info {
-		width: 60%;
-		display: flex;
-		flex-direction: column;
-    margin-left: 4%;
-		.recipe-date {
-			color: darkslategray;
+
+.recipe-info {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+  margin-left: 4%;
+    .news {
+      background-color: #FDE2DA;
+      width: 28%;
+      height: 15%;
+      margin-top: 8%;
+      font-weight: bold;
+      font-size: 10px;
+      color: black;
+      border-radius: 8px;
+    }
+		.recipe-data {
+			color: #7F7F7F;
 			font-family: 'IBM Plex Mono', monospace;
 			font-size: 12px;
-		}
-		.recipe-name {
-			font-family: 'IBM Plex Mono', monospace;
-			font-size: 20px;
-		}
-		.recipe-desc {
-			color: darkslategray;
-			font-family: 'IBM Plex Mono', monospace;
-			font-size: 12px;
-			}
-		.news {
-			border: none;
-			color: #fc784f;
-			text-align: center;
-			color: darkslategray;
-			font-family: 'IBM Plex Mono', monospace;
-			font-size: 12px;
-			border-radius: 10%;
 		}
 	}
+}
+
+.recipe-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  margin: 2% 0 2% 3%;
+}
+.news {
+  border: none;
+  color: #fc784f;
+  text-align: center;
+  color: darkslategray;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  border-radius: 10%;
 }

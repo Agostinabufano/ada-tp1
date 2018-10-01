@@ -287,6 +287,42 @@ hr {
   filter: Alpha(opacity=50);
 }
 
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+.recipes .recipes-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.recipes .recipes-sec img {
+  border-radius: 10%;
+  width: 90%;
+}
+.recipes .recipes-sec .button-center {
+  position: absolute;
+  z-index: 1;
+}
+.recipes .recipes-sec .button-center .platos, .recipes .recipes-sec .button-center .recetas, .recipes .recipes-sec .button-center .exoticos {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  border: none;
+  background-color: wheat;
+}
+.recipes .recipes-sec .button-center .platos:hover, .recipes .recipes-sec .button-center .recetas:hover, .recipes .recipes-sec .button-center .exoticos:hover {
+  background-color: #fc784f;
+}
+
 p {
   margin: 0;
 }
@@ -308,34 +344,6 @@ p {
 }
 .carrousel .carrousel-img:last-of-type {
   margin-right: 0;
-}
-
-.recipes-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.recipes {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-}
-.recipes .recipes-sec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 1%;
-}
-.recipes .recipes-sec img {
-  border-radius: 10%;
-  width: 100%;
-}
-.recipes .recipes-sec img .button-center {
-  position: absolute;
-  text-align: center;
-  z-index: 1;
 }
 
 .bio {
@@ -366,6 +374,7 @@ p {
 .vid figcaption {
   width: 100%;
   font-size: 10px;
+  color: #7F7F7F;
 }
 
 .bio-title-box {
@@ -423,10 +432,11 @@ p {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
+  margin-bottom: 2%;
 }
 .recipes-links .articles {
   width: 65%;
-  margin-left: 0;
+  margin-left: 1.5%;
 }
 
 article {
@@ -436,6 +446,8 @@ article {
   margin-left: 0%;
   margin-right: 0;
   width: 100%;
+  border-top: 1.2px solid #d6d6c2;
+  padding-top: 4%;
 }
 article .recipe-img {
   width: 40%;
@@ -450,21 +462,29 @@ article .recipe-info {
   flex-direction: column;
   margin-left: 4%;
 }
-article .recipe-info .recipe-date {
-  color: darkslategray;
+article .recipe-info .news {
+  background-color: #FDE2DA;
+  width: 28%;
+  height: 15%;
+  margin-top: 8%;
+  font-weight: bold;
+  font-size: 10px;
+  color: black;
+  border-radius: 8px;
+}
+article .recipe-info .recipe-data {
+  color: #7F7F7F;
   font-family: "IBM Plex Mono", monospace;
   font-size: 12px;
 }
-article .recipe-info .recipe-name {
+
+.recipe-name {
   font-family: "IBM Plex Mono", monospace;
   font-size: 20px;
+  margin: 2% 0 2% 3%;
 }
-article .recipe-info .recipe-desc {
-  color: darkslategray;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-}
-article .recipe-info .news {
+
+.news {
   border: none;
   color: #fc784f;
   text-align: center;
