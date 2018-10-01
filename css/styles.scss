@@ -104,7 +104,6 @@ body {
     }
 }
 
-
 .container {
     display: flex;
     justify-content: center;
@@ -121,7 +120,7 @@ body {
 }
 
 .face {
-    background-color: rgb(9, 9, 199);
+    background-color: #3b5998;
     width: 25px;
     height: 25px;
     margin: 20px;
@@ -137,7 +136,7 @@ body {
 }
 
 .twiter {
-    background-color: rgb(73, 180, 184);
+    background-color: #55acee;
     margin: 20px;
     width: 25px;
     height: 25px;
@@ -153,7 +152,7 @@ body {
 }
 
 .google {
-    background-color: rgb(197, 76, 76);
+    background-color: #dd4b39;
     margin: 20px;
     width: 25px;
     height: 25px;
@@ -169,7 +168,7 @@ body {
 }
 
 .insta {
-    background-color: rgb(70, 37, 37);
+    background-color: #8f6247;
     margin: 20px;
     width: 25px;
     height: 25px;
@@ -185,7 +184,7 @@ body {
 }
 
 .pinterest {
-    background-color:rgb(223, 74, 74);
+    background-color: #cb2027;
     margin: 20px;
     width: 25px;
     height: 25px;
@@ -261,7 +260,7 @@ h4 {
     margin-left: 20px;
 }
 
-.puntito {
+.ingredientes {
     color: rgb(243, 96, 42);
     .grey {
         color: rgb(146, 144, 144);
@@ -279,10 +278,71 @@ h4 {
     font-size: 14px;
     opacity: 0.5;
     filter: Alpha(opacity=50);
-    .re {
-        margin-left: 5px;
+    .contact {
+        margin-left: 10px;
     }
 }
+
+.redes-f {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: #02194b;
+        cursor: pointer;
+    }
+}
+
+.redes-t {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: #55acee;
+        cursor: pointer;
+    }
+}
+
+.redes-g {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+        color: #cb2027;
+    }
+}
+
+.redes-li {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+        color: #007bb5;
+    }
+}
+
+.redes-i {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: #8f6247;
+        cursor: pointer;
+    }
+}
+
+.redes-y {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: #ff0000;
+        cursor: pointer;
+    }
+}
+
 
 hr {
     color: rgb(207, 204, 204);
