@@ -20,12 +20,26 @@ body {
   display: flex;
   justify-content: center;
   padding: 15px 15px;
+  position: relative;
 }
 .list-nav .list-cat1 {
   margin-left: 10px;
   margin-right: 10px;
   color: #929090;
   font-size: 15px;
+}
+
+li {
+  margin-right: 2%;
+  margin-left: 2%;
+  font-size: 12px;
+}
+li li:hover {
+  color: orange;
+}
+
+ul {
+  margin-bottom: 0;
 }
 
 .list-cat1:first-of-type {
@@ -36,20 +50,32 @@ body {
   cursor: pointer;
 }
 
+.categoria-1:hover {
+  color: #fc784f;
+}
+
 .dropdown {
+  position: relative;
   margin-left: 10px;
   margin-right: 10px;
   color: #929090;
-  position: relative;
 }
-
-.dropdown-content {
+.dropdown .dropdown-content {
   position: absolute;
   display: none;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px;
-  padding: 12px 16px;
+  right: 0px;
+  top: 0px;
   color: #929090;
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+}
+
+.list-cat:hover {
+  color: #fc784f;
 }
 
 .main {
@@ -337,6 +363,231 @@ hr {
   width: 70%;
   opacity: 0.5;
   filter: Alpha(opacity=50);
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+.recipes .recipes-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.recipes .recipes-sec img {
+  border-radius: 10%;
+  width: 90%;
+}
+.recipes .recipes-sec .button-center {
+  position: absolute;
+  z-index: 1;
+}
+.recipes .recipes-sec .button-center .platos, .recipes .recipes-sec .button-center .recetas, .recipes .recipes-sec .button-center .exoticos {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 12px 12px 12px 12px;
+  width: 100%;
+  height: 28px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  border: none;
+  background-color: wheat;
+  cursor: pointer;
+}
+.recipes .recipes-sec .button-center .platos:hover, .recipes .recipes-sec .button-center .recetas:hover, .recipes .recipes-sec .button-center .exoticos:hover {
+  background-color: #fc784f;
+}
+
+.recipe-data-box {
+  display: flex;
+  justify-content: space-between;
+}
+.recipe-data-box .social {
+  color: #7F7F7F;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+.carrousel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.carrousel .carrousel-img {
+  width: 24%;
+}
+.carrousel .carrousel-img img {
+  width: 100%;
+}
+.carrousel .carrousel-img:first-of-type {
+  margin-left: 0;
+}
+.carrousel .carrousel-img:last-of-type {
+  margin-right: 0;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: auto;
+}
+
+.vid-bio {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+.vid {
+  width: 65%;
+  height: auto;
+  margin: 1%;
+}
+.vid iframe {
+  width: 100%;
+  height: 100%;
+}
+.vid figcaption {
+  width: 100%;
+  font-size: 10px;
+  color: #7F7F7F;
+  margin-top: 0.5%;
+}
+
+.bio-title-box {
+  background-color: #FDE2DA;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bio-title-box .bio-title {
+  font-size: 11px;
+  color: black;
+  cursor: pointer;
+}
+
+.bio {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.bio .photo {
+  width: 65%;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+.bio .photo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.bio-name-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+.bio-name-box .bio-name {
+  color: black;
+  font-size: 20px;
+  margin-top: 8%;
+  margin-bottom: 6%;
+}
+.bio-name-box .bio-data {
+  color: #7F7F7F;
+  font-size: 13px;
+  margin-bottom: 10%;
+}
+
+.recipes-links {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.recipes-links .articles {
+  width: 65%;
+  margin-left: 1.5%;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-left: 0%;
+  margin-right: 0;
+  width: 100%;
+  border-top: 1.2px solid #d6d6c2;
+  padding-top: 4%;
+}
+article .recipe-img {
+  width: 40%;
+}
+article .recipe-img img {
+  border-radius: 10%;
+  width: 100%;
+}
+article .recipe-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+}
+article .recipe-info .news {
+  background-color: #FDE2DA;
+  width: 28%;
+  height: 15%;
+  margin-top: 8%;
+  font-weight: bold;
+  font-size: 10px;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+article .recipe-info .recipe-data {
+  color: #7F7F7F;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.recipe-name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+  margin: 2% 0 2% 3%;
+}
+
+.news {
+  border: none;
+  color: #fc784f;
+  text-align: center;
+  color: darkslategray;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  border-radius: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */
