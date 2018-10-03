@@ -29,6 +29,14 @@ body {
     }
 }
 
+// agostina
+
+.mobile {
+    display: none;
+}
+
+// agostina
+
 .categoria-1 {
     margin-left: 10px;
     margin-right: 10px;
@@ -68,6 +76,16 @@ body {
 .categoria-2:hover {
     color: orangered;
 }
+
+// / *agostina* / 
+.categoria-mobile {
+    display: none;
+    .fas .fa-bars {
+        display: none;
+    }
+}
+
+// / *agostina* / 
 
 .main {
     width: 100%;    
@@ -296,6 +314,7 @@ h4 {
     display: flex;
     align-items: center; 
     &:hover {
+        display: block; 
         color: #02194b;
         cursor: pointer;
     }
@@ -360,5 +379,162 @@ hr {
     filter: Alpha(opacity=50);
 }          
 
+/* agostina */
+
+.arrow-up {
+    display: none;
+}
+
+/* agostina */
+
 /*aca termina el codigo de nati */
 
+/* agostina */
+
+@media (max-width:600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 40px;
+        text-align: center;
+        h1 {
+            margin: 0%;
+        }
+    }
+
+    .list-nav {
+        display: none;
+    }
+
+        
+    // .mobile {
+    //     display: block;
+    //     .cat-one {
+    //         margin-left: 10px;
+    //         margin-right: 10px;
+    //         .fa-bars {
+    //             margin-left: 5px;
+    //         } 
+    //     }
+    //     .menu {
+    //         position: absolute;
+    //         min-width: 160px;
+    //         box-shadow: 0px 8px 16px 0px;
+    //         padding: 12px 16px;
+    //         color: rgb(146, 144, 144);
+    //         display: none;
+    //         margin: 0;
+    //     }
+    // }
+
+    // .cat-one:hover .menu {
+    //     display: flex;
+    //     flex-direction: column;
+    //     list-style: none;
+    //     background-color: white;
+    //     color: rgb(146, 144, 144);
+    // }
+
+    // .categ-one {
+    //     color: orange;
+    // }
+    
+    .picture {
+        width: 600px;
+        margin: 0%;
+        .pic1 {
+            width: 100%;
+            margin: 0%;
+        }
+    }
+
+    .container-list {
+       display: flex;
+       flex-direction: column;
+       width: 70%;
+       margin: auto;
+       .list-items {
+           width: 100%;
+           display: flex;
+           margin:20px;
+           margin-left: 0%;
+       }
+   }
+
+   .container {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 0%;
+       margin: 0%;
+       .redes {
+           margin-right: 0%;
+       }
+       .iconos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+            align-items: center;
+        }
+        .second-pic-container {
+            display: flex;
+            justify-content: center;  
+            width: 75%; 
+            margin: 0%;
+            .second-pic {
+                height: 100%;
+                width: 80%;
+            }
+        }
+   }
+
+.main-container {
+    margin: 0%;
+    width: 60%;
+    align-content: center;
+    .datos {
+        width: 100%;
+    }
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .contenido-text {
+        h2 {
+            margin: 0%;
+        }
+    }
+}
+
+    footer {
+        .redes-sociales {
+            p {
+                display: none;
+            }
+        }
+        .arrow-up {
+            display: block;
+            position: absolute;
+            font-size: 20px;
+            margin-top: 68px;
+            background-color: white;
+            .fa-arrow-circle-up {
+                color: orangered;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+/* agostina */

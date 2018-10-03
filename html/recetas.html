@@ -3,6 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <title>Recetas</title>
@@ -14,28 +15,41 @@
       </div>
       <nav>
         <ul class="list-nav"> 
+          <i class="fas fa-bars"></i>
           <li class="categoria-1">HOME</li>
           <li class="dropdown">PLATOS<i class="fas fa-caret-down"></i>
             <ul class="dropdown-content">
-                <li class="categoria-2">ENSALADA</li>
-                <li class="categoria-2">CARNE</li>
-                <li class="categoria-2">HELADOS</li>
+                <li class="categoria-2">Ensalada</li>
+                <li class="categoria-2">Carne</li>
+                <li class="categoria-2">Helados</li>
             </ul>   
           </li>        
           <li class="categoria-1">SOBRE MÍ</li>
           <li class="categoria-1">CONTACTO</li>    
+        </ul> 
+    </nav>
+    <nav class="mobile">
+        <li class="cat-one">MENU</li><i class="fas fa-bars"></i>
+        <ul class="menu">
+          <li class="categ-one">HOME</li>
+          <li class="categ-one">PLATOS</li>
+          <li class="categ-one">SOBRE MÍ</li>
+          <li class="categ-one">CONTACTO</li>
         </ul>
+
     </nav>
     </header>
     <section class="main">
-      <div class="picture">
+      <figure class="picture">
         <img class="pic1" src="../imagenes/banner.jpg" alt="">
-      </div>
+      </figure>
       <div>        
       <ul class="container-list">
-        <li class="navs"><i class="fas fa-home"></i></li>
-        <li class="navs">Home</li>
-        <li class="navs">Archive</li>
+        <div class="list-items">
+          <li class="navs"><i class="fas fa-home"></i></li>
+          <li class="navs">Home</li>
+          <li class="navs">Archive</li>
+        </div>
         <li class="navs">Single Post Blog</li>
       </ul>
       </div>
@@ -51,15 +65,15 @@
           <li><div class="pinterest"><i class="fab fa-pinterest-p"></i></div></li>
         </ul>
        </div>
-       <div>
+       <figure class="second-pic-container">
         <img class="second-pic" src="../imagenes/recetas.JPG" alt="">
-       </div>
+       </figure>
       </div>
     </section>
     <section class="main-container">
       <div class="datos">
         <div class="fecha">
-          <p>By Maria  |  Mayo 19, 2017</p>
+          <p>By Maria | Mayo 19, 2017</p>
         </div>
         <div class="social">
           <i class="far fa-heart">20</i>          
@@ -116,6 +130,9 @@
           <i class="fab fa-youtube"></i>
           <p class="contact">YOUTUBE</p>          
         </div>     
+        <div class="arrow-up">
+          <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
       </div>       
     </footer>   
     <hr>  
