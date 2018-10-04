@@ -391,7 +391,7 @@ hr {
     opacity: 0.5;
     filter: Alpha(opacity=50);
 }
-// Natalia
+// fin Natalia
 // ---------------------------------------------------------------------------------------------------
 // Pamina
 @mixin buttons() {
@@ -437,7 +437,7 @@ hr {
         }
  }
 }
-// Pamina
+// fin Pamina
 // Camila
 
 $ourgray: #7F7F7F;
@@ -455,7 +455,7 @@ $ourgray: #7F7F7F;
 p {
   margin: 0;
 }
-
+//pamina y camila
 .carrousel {
 	display: flex;
   justify-content: space-between;
@@ -473,6 +473,9 @@ p {
   .carrousel-img:last-of-type {
     margin-right: 0;
     }
+    .carrousel-img-mobile {
+		display: none;
+	}
 }
 
 .bio {
@@ -481,7 +484,8 @@ p {
   width: 30%;
   height: auto;
 }
-
+//fin camila y pamina
+//camila
 .vid-bio {
 	display: flex;
   justify-content: center;
@@ -545,6 +549,7 @@ p {
     text-align: center;
     margin: auto;
     width: 90%;
+<<<<<<< HEAD
 
 /*aca termina el codigo de nati */
 
@@ -676,42 +681,33 @@ p {
     }
 }
 
-    footer {
-        .redes-sociales {
-            p {
-                display: none;
-            }
+footer {
+    .redes-sociales {
+        p {
+            display: none;
         }
-        .arrow-up {
-            display: block;
-            position: absolute;
-            font-size: 20px;
-            margin-top: 68px;
-            background-color: white;
-            .fa-arrow-circle-up {
-                color: orangered;
-                z-index: 1;
-            }
+    }
+    .arrow-up {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        margin-top: 68px;
+        background-color: white;
+        .fa-arrow-circle-up {
+            color: orangered;
+            z-index: 1;
         }
     }
 }
 
 /* agostina */
 
-
-      .bio-name {
-        color: black;
-        font-size: 20px;
-        margin-top: 8%;
-        margin-bottom: 6%;
-      }
-      .bio-data {
-        color: $ourgray;
-        font-size: 13px;
-        margin-bottom: 10%;
+    .bio-data {
+      color: $ourgray;
+      font-size: 13px;
+      margin-bottom: 10%;
       }
   }
-
 
 .recipes-links {
 	width: 80%;
@@ -782,3 +778,89 @@ article{
   border-radius: 10%;
 }
 // Camila
+// fin Camila
+
+//pam 
+@media screen and(max-width: 600px) {
+  .list-nav {
+    display: none;
+    }
+  .carrousel {
+    display: flex;
+    .carrousel-img {
+      display: none;
+      }
+      .carrousel-img-mobile {
+      display: block;
+      width: 100%;
+      height: auto;
+      }
+    }
+    .recipe-bio {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      }
+    .recipes {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+      .recipes-sec {
+        margin-top: 10px;
+        align-items: center;
+        }
+      }	
+  .vid {
+    display: none;
+    }
+  .bio {
+    width: 100%;
+		}
+	}
+  .recipes-links {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		.articles {
+		width: 100%;
+		margin-left: 0;
+		article {
+			justify-content: center;
+			.recipe-info {
+				width: 80%;
+			}
+		.recipe-data {
+			font-size: 16px;
+		}
+			.news {
+				width: 100%;
+  		  height: 30px;
+   			display: flex;
+ 			  align-items: center;
+   			justify-content: center;
+			}
+		}
+		.recipe1 {
+            width: 100%;
+            text-align: center; 
+			.recipe-img {
+				display: none; 
+			}
+		}
+		.recipe2 {
+			display: none;
+			}
+    }
+	}
+  .contact {
+		display: none;
+	} 
+	.fab.fa-facebook-f, .fab.fa-twitter, .fab.fa-google-plus-g, .fa-linkedin, .fab.fa-instagram, .fa-youtube {
+		font-size: 24px;
+	}
+
+
+//fin queries pam
