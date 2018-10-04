@@ -300,7 +300,7 @@ h4 {
   opacity: 0.5;
   filter: Alpha(opacity=50);
 }
-.redes-sociales .contact {
+.redes-sociales .contacts {
   margin-left: 10px;
 }
 
@@ -394,11 +394,12 @@ hr {
   border-radius: 10%;
   width: 90%;
 }
-.recipes .recipes-sec .button-center {
+
+.button-center {
   position: absolute;
   z-index: 1;
 }
-.recipes .recipes-sec .button-center .platos, .recipes .recipes-sec .button-center .recetas, .recipes .recipes-sec .button-center .exoticos {
+.button-center .platos, .button-center .recetas, .button-center .exoticos {
   text-decoration: none;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
@@ -413,7 +414,7 @@ hr {
   background-color: wheat;
   cursor: pointer;
 }
-.recipes .recipes-sec .button-center .platos:hover, .recipes .recipes-sec .button-center .recetas:hover, .recipes .recipes-sec .button-center .exoticos:hover {
+.button-center .platos .platos:hover, .button-center .platos .recetas:hover, .button-center .platos .exoticos:hover, .button-center .recetas .platos:hover, .button-center .recetas .recetas:hover, .button-center .recetas .exoticos:hover, .button-center .exoticos .platos:hover, .button-center .exoticos .recetas:hover, .button-center .exoticos .exoticos:hover {
   background-color: #fc784f;
 }
 
@@ -443,13 +444,16 @@ p {
 .carrousel .carrousel-img img {
   width: 100%;
 }
-.carrousel .carrousel-img:first-of-type {
+
+.carrousel-img:first-of-type {
   margin-left: 0;
 }
-.carrousel .carrousel-img:last-of-type {
+
+.carrousel-img:last-of-type {
   margin-right: 0;
 }
-.carrousel .carrousel-img-mobile {
+
+.carrousel-img-mobile {
   display: none;
 }
 
@@ -523,47 +527,84 @@ p {
   text-align: center;
   margin: auto;
   width: 90%;
-  /*aca termina el codigo de nati */
-  /* agostina */
-  /* agostina */
 }
+
+/* agostina */
 @media (max-width: 600px) {
-  .bio-name-box body {
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .bio-name-box .title {
+
+  .title {
     font-size: 40px;
     text-align: center;
   }
-  .bio-name-box .title h1 {
+  .title h1 {
     margin: 0%;
   }
-  .bio-name-box .list-nav {
+
+  .list-nav {
     display: none;
   }
-  .bio-name-box .picture {
+
+  .mobile {
+    display: block;
+  }
+  .mobile .cat-one {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mobile .cat-one .fa-bars {
+    margin-left: 5px;
+  }
+
+  .menu {
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    padding: 12px 16px;
+    color: #929090;
+    display: none;
+    margin: 0;
+  }
+
+  .cat-one:hover .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: white;
+    color: #929090;
+  }
+
+  .categ-one {
+    color: orange;
+  }
+
+  .picture {
     width: 600px;
     margin: 0%;
   }
-  .bio-name-box .picture .pic1 {
+  .picture .pic1 {
     width: 100%;
     margin: 0%;
   }
-  .bio-name-box .container-list {
+
+  .container-list {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: auto;
   }
-  .bio-name-box .container-list .list-items {
+  .container-list .list-items {
     width: 100%;
     display: flex;
     margin: 20px;
     margin-left: 0%;
   }
-  .bio-name-box .container {
+
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -571,10 +612,10 @@ p {
     margin-top: 0%;
     margin: 0%;
   }
-  .bio-name-box .container .redes {
+  .container .redes {
     margin-right: 0%;
   }
-  .bio-name-box .container .iconos {
+  .container .iconos {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -583,132 +624,129 @@ p {
     padding: 0%;
     align-items: center;
   }
-  .bio-name-box .container .second-pic-container {
+  .container .second-pic-container {
     display: flex;
     justify-content: center;
     width: 75%;
     margin: 0%;
   }
-  .bio-name-box .container .second-pic-container .second-pic {
+  .container .second-pic-container .second-pic {
     height: 100%;
     width: 80%;
   }
-  .bio-name-box .main-container {
+
+  .main-container {
     margin: 0%;
     width: 60%;
     align-content: center;
   }
-  .bio-name-box .main-container .datos {
+  .main-container .datos {
     width: 100%;
   }
-  .bio-name-box .contenedor {
+
+  .contenedor {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-  .bio-name-box .contenedor .contenido-text h2 {
+  .contenedor .contenido-text h2 {
     margin: 0%;
   }
-  .bio-name-box footer .redes-sociales p {
+
+  footer .redes-sociales p {
     display: none;
   }
-  .bio-name-box footer .arrow-up {
+
+  .arrow-up {
     display: block;
     position: absolute;
     font-size: 20px;
     margin-top: 68px;
     background-color: white;
   }
-  .bio-name-box footer .arrow-up .fa-arrow-circle-up {
+  .arrow-up .fa-arrow-circle-up {
     color: orangered;
     z-index: 1;
   }
-}
-.bio-name-box .bio-name {
-  color: black;
-  font-size: 20px;
-  margin-top: 8%;
-  margin-bottom: 6%;
-}
-.bio-name-box .bio-data {
-  color: #7F7F7F;
-  font-size: 13px;
-  margin-bottom: 10%;
-}
 
-.recipes-links {
-  width: 80%;
-  height: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-  margin-bottom: 2%;
-}
-.recipes-links .articles {
-  width: 65%;
-  margin-left: 1.5%;
-}
+  /* agostina */
+  .bio-data {
+    color: #7F7F7F;
+    font-size: 13px;
+    margin-bottom: 10%;
+  }
 
-article {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 2%;
-  margin-left: 0%;
-  margin-right: 0;
-  width: 100%;
-  border-top: 1.2px solid #d6d6c2;
-  padding-top: 4%;
-}
-article .recipe-img {
-  width: 40%;
-}
-article .recipe-img img {
-  border-radius: 10%;
-  width: 100%;
-}
-article .recipe-info {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 4%;
-}
-article .recipe-info .news {
-  background-color: #FDE2DA;
-  width: 28%;
-  height: 15%;
-  margin-top: 8%;
-  font-weight: bold;
-  font-size: 10px;
-  color: black;
-  border-radius: 8px;
-  cursor: pointer;
-}
-article .recipe-info .recipe-data {
-  color: #7F7F7F;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-}
+  .recipes-links {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  .recipes-links .articles {
+    width: 65%;
+    margin-left: 1.5%;
+  }
 
-.recipe-name {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 20px;
-  margin: 2% 0 2% 3%;
-}
+  article {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0;
+    width: 100%;
+    border-top: 1.2px solid #d6d6c2;
+    padding-top: 4%;
+  }
+  article .recipe-img {
+    width: 40%;
+  }
+  article .recipe-img img {
+    border-radius: 10%;
+    width: 100%;
+  }
 
-.news {
-  border: none;
-  color: #fc784f;
-  text-align: center;
-  color: darkslategray;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
-  border-radius: 10%;
-}
-<<<<<<< HEAD
-=======
+  .recipe-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+  }
+  .recipe-info .news {
+    background-color: #FDE2DA;
+    width: 28%;
+    height: 15%;
+    margin-top: 8%;
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .recipe-info .news .recipe-data {
+    color: #7F7F7F;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+  }
 
-@media screen and (max-width: 600px) {
+  .recipe-name {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    margin: 2% 0 2% 3%;
+  }
+
+  .news {
+    border: none;
+    color: #fc784f;
+    text-align: center;
+    color: darkslategray;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    border-radius: 10%;
+  }
+
   .list-nav {
     display: none;
   }
@@ -761,40 +799,31 @@ article .recipe-info .recipe-data {
   width: 100%;
   margin-left: 0;
 }
-.recipes-links .articles article {
+.recipes-links article {
   justify-content: center;
 }
-.recipes-links .articles article .recipe-info {
+.recipes-links .recipe-info {
   width: 80%;
 }
-.recipes-links .articles article .recipe-data {
+.recipes-links .recipe-data {
   font-size: 16px;
 }
-.recipes-links .articles article .news {
+.recipes-links .news {
   width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.recipes-links .articles .recipe1 {
+.recipes-links .recipe1 {
   width: 100%;
   text-align: center;
 }
-.recipes-links .articles .recipe1 .recipe-img {
+.recipes-links .recipe-img {
   display: none;
 }
-.recipes-links .articles .recipe2 {
+.recipes-links .recipe2 {
   display: none;
 }
-
-.contact {
-  display: none;
-}
-
-.fab.fa-facebook-f, .fab.fa-twitter, .fab.fa-google-plus-g, .fa-linkedin, .fab.fa-instagram, .fa-youtube {
-  font-size: 24px;
-}
->>>>>>> c377afc61fcf6182f021b8d7f8e071b4e0a28ef3
 
 /*# sourceMappingURL=styles.css.map */
