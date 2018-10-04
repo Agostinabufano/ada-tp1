@@ -597,40 +597,9 @@ article .recipe-info .recipe-data {
   border-radius: 10%;
 }
 
-.menu-mobile {
-  display: none;
-}
-
 @media screen and (max-width: 600px) {
   .list-nav {
     display: none;
-  }
-
-  .menu-mobile {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  .menu-mobile .button-mobile {
-    border-radius: 12px 12px 12px 12px;
-    width: 80%;
-    height: 28px;
-    margin-bottom: 16px;
-    text-align: center;
-    border: none;
-    background-color: #f3602a;
-  }
-  .menu-mobile .button-mobile .fa-bars {
-    font-weight: bold;
-    font-size: 16px;
-    color: white;
-  }
-  .menu-mobile .button-mobile .menu-text {
-    text-decoration: none;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: bold;
-    font-size: 16px;
-    color: white;
   }
 
   .carrousel {
