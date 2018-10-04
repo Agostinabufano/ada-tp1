@@ -528,6 +528,86 @@ p {
   margin: auto;
   width: 90%;
 }
+.bio-name-box .bio-name {
+  color: black;
+  font-size: 20px;
+  margin-top: 8%;
+  margin-bottom: 6%;
+}
+.bio-name-box .bio-data {
+  color: #7F7F7F;
+  font-size: 13px;
+  margin-bottom: 10%;
+}
+
+.recipes-links {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.recipes-links .articles {
+  width: 65%;
+  margin-left: 1.5%;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2%;
+  margin-left: 0%;
+  margin-right: 0;
+  width: 100%;
+  border-top: 1.2px solid #d6d6c2;
+  padding-top: 4%;
+}
+article .recipe-img {
+  width: 40%;
+}
+article .recipe-img img {
+  border-radius: 10%;
+  width: 100%;
+}
+article .recipe-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+}
+article .recipe-info .news {
+  background-color: #FDE2DA;
+  width: 28%;
+  height: 15%;
+  margin-top: 8%;
+  font-weight: bold;
+  font-size: 10px;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+article .recipe-info .recipe-data {
+  color: #7F7F7F;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+
+.recipe-name {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+  margin: 2% 0 2% 3%;
+}
+
+.news {
+  border: none;
+  color: #fc784f;
+  text-align: center;
+  color: darkslategray;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  border-radius: 10%;
+}
 
 /* agostina */
 @media (max-width: 600px) {
@@ -789,41 +869,39 @@ p {
   .bio {
     width: 100%;
   }
-}
-.recipes-links {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-.recipes-links .articles {
-  width: 100%;
-  margin-left: 0;
-}
-.recipes-links article {
-  justify-content: center;
-}
-.recipes-links .recipe-info {
-  width: 80%;
-}
-.recipes-links .recipe-data {
-  font-size: 16px;
-}
-.recipes-links .news {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.recipes-links .recipe1 {
-  width: 100%;
-  text-align: center;
-}
-.recipes-links .recipe-img {
-  display: none;
-}
-.recipes-links .recipe2 {
-  display: none;
+
+  .recipes-links {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .recipes-links .articles {
+    width: 100%;
+    margin-left: 0;
+  }
+  .recipes-links article {
+    justify-content: center;
+  }
+  .recipes-links .recipe-info {
+    width: 80%;
+  }
+  .recipes-links .recipe-data {
+    font-size: 16px;
+  }
+  .recipes-links .news {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .recipes-links .recipe1 {
+    width: 100%;
+    text-align: center;
+  }
+  .recipes-links .recipe2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

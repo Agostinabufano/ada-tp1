@@ -424,9 +424,8 @@ hr {
             border-radius: 10%;
             width: 90%;
         }
-    
-    }
-}
+			}
+	}
 
 .button-center {
     position: absolute;
@@ -553,8 +552,89 @@ p {
     justify-content: center;
     text-align: center;
     margin: auto;
-    width: 90%;
-  }
+		width: 90%;
+		.bio-name {
+      color: black;
+      font-size: 20px;
+      margin-top: 8%;
+      margin-bottom: 6%;
+      }
+    .bio-data {
+      color: $ourgray;
+      font-size: 13px;
+      margin-bottom: 10%;
+      }
+	}
+	
+	.recipes-links {
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		margin-bottom: 2%;
+		 .articles {
+			 width: 65%;
+			 margin-left: 1.5%;
+		 }
+	
+	}
+	
+	article{
+		display: flex;
+		justify-content: flex-start;
+		margin-top: 2%;
+		margin-left: 0%;
+		margin-right: 0;
+		width: 100%;
+		border-top: 1.2px solid #d6d6c2;
+		padding-top: 4%;
+		.recipe-img {
+			width: 40%;
+			img {
+				border-radius: 10%;
+				width: 100%;
+			}
+		}
+	
+	.recipe-info {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		margin-left: 4%;
+			.news {
+				background-color: #FDE2DA;
+				width: 28%;
+				height: 15%;
+				margin-top: 8%;
+				font-weight: bold;
+				font-size: 10px;
+				color: black;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			.recipe-data {
+				color: $ourgray;
+				font-family: 'IBM Plex Mono', monospace;
+				font-size: 12px;
+			}
+		}
+	}
+	
+	.recipe-name {
+		font-family: 'IBM Plex Mono', monospace;
+		font-size: 20px;
+		margin: 2% 0 2% 3%;
+	}
+	.news {
+		border: none;
+		color: #fc784f;
+		text-align: center;
+		color: darkslategray;
+		font-family: 'IBM Plex Mono', monospace;
+		font-size: 12px;
+		border-radius: 10%;
+	}
 
 /* agostina */
 
@@ -786,7 +866,6 @@ article{
 // fin Camila
 
 //pam 
-//@media screen and(max-width: 600px) {
   .list-nav {
     display: none;
     }
@@ -824,7 +903,7 @@ article{
   .bio {
     width: 100%;
 		}
-	}
+	
   .recipes-links {
 		width: 100%;
 		margin-left: 0;
@@ -854,14 +933,14 @@ article{
         width: 100%;
         text-align: center; 
     }
-	.recipe-img {
-		display: none; 
-	}
+	// .recipe-img {
+	// 	display: none; 
+	// }
 	
 	.recipe2 {
 	    display: none;
 	}
-
+}
 }
 
 //fin queries pam
