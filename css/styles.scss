@@ -382,7 +382,7 @@ hr {
     opacity: 0.5;
     filter: Alpha(opacity=50);
 }
-// Natalia
+// fin Natalia
 // ---------------------------------------------------------------------------------------------------
 // Pamina
 @mixin buttons() {
@@ -428,7 +428,7 @@ hr {
         }
  }
 }
-// Pamina
+// fin Pamina
 // Camila
 
 $ourgray: #7F7F7F;
@@ -540,20 +540,18 @@ p {
     text-align: center;
     margin: auto;
     width: 90%;
-
-      .bio-name {
-        color: black;
-        font-size: 20px;
-        margin-top: 8%;
-        margin-bottom: 6%;
+    .bio-name {
+      color: black;
+      font-size: 20px;
+      margin-top: 8%;
+      margin-bottom: 6%;
       }
-      .bio-data {
-        color: $ourgray;
-        font-size: 13px;
-        margin-bottom: 10%;
+    .bio-data {
+      color: $ourgray;
+      font-size: 13px;
+      margin-bottom: 10%;
       }
   }
-
 
 .recipes-links {
 	width: 80%;
@@ -625,11 +623,11 @@ article{
 }
 // fin Camila
 
-//pam - in progress (poner todos los queries abajo de esto!) 
+//pam 
 .menu-mobile {display: none;}
 
 @media screen and(max-width: 600px) {
-  .list-nav {//está todo descentrado y no sé por qué
+  .list-nav {
     display: none;
     }
     .menu-mobile { 
@@ -679,6 +677,8 @@ article{
       flex-direction: column;
       padding-bottom: 10px;
       width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
       .recipes-sec {
         margin-top: 10px;
         align-items: center;
@@ -687,29 +687,51 @@ article{
   .vid {
     display: none;
     }
-  .bio { // hay que hacer que la receta quede por encima de la bio!
+  .bio {
     width: 100%;
-    }
+		}
+	}
   .recipes-links {
 		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		.articles {
+		width: 100%;
+		margin-left: 0;
+		article {
+			justify-content: center;
+			.recipe-info {
+				width: 80%;
+			}
+		.recipe-data {
+			font-size: 16px;
+		}
+			.news {
+				width: 100%;
+  		  height: 30px;
+   			display: flex;
+ 			  align-items: center;
+   			justify-content: center;
+			}
+		}
 		.recipe1 {
             width: 100%;
-            text-align: center; //continuar
+            text-align: center; 
 			.recipe-img {
-				display: none; //corroborar que la img tiene que no estar
+				display: none; 
 			}
 		}
 		.recipe2 {
 			display: none;
 			}
     }
+	}
   .contact {
 		display: none;
 	} 
 	.fab.fa-facebook-f, .fab.fa-twitter, .fab.fa-google-plus-g, .fa-linkedin, .fab.fa-instagram, .fa-youtube {
 		font-size: 24px;
 	}
-}
 
 
 //fin queries pam
