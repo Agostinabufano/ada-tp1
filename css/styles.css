@@ -13,6 +13,7 @@ body {
 .title h1 {
   font-family: "Indie Flower", cursive;
   color: #f3602a;
+  font-size: 42px;
 }
 
 .list-nav {
@@ -560,7 +561,7 @@ p {
 }
 .bio-name-box .bio-name {
   color: black;
-  font-size: 20px;
+  font-size: 32px;
   margin-top: 8%;
   margin-bottom: 6%;
 }
@@ -648,7 +649,7 @@ article .recipe-info .recipe-data {
   }
 
   .title {
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     margin-top: 20px;
   }
@@ -893,7 +894,7 @@ article .recipe-info .recipe-data {
 
   .recipe-name {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 20px;
+    font-size: 28px;
     margin: 2% 0 2% 3%;
   }
 
@@ -966,7 +967,7 @@ article .recipe-info .recipe-data {
     width: 80%;
   }
   .recipes-links .recipe-data {
-    font-size: 16px;
+    font-size: 18px;
   }
   .recipes-links .news {
     width: 100%;
@@ -978,9 +979,18 @@ article .recipe-info .recipe-data {
   .recipes-links .recipe1 {
     width: 100%;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .recipes-links .recipe1 .recipe-img {
+    display: none;
   }
   .recipes-links .recipe2 {
     display: none;
+  }
+  .recipes-links .news {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
