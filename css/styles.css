@@ -644,6 +644,7 @@ article .recipe-info .recipe-data {
   body {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
@@ -689,36 +690,28 @@ article .recipe-info .recipe-data {
     color: white;
   }
 
-  .menu {
-    position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px;
-    padding: 12px 18px;
+  .dropdown {
+    position: relative;
     color: white;
-    display: none;
-    text-align: center;
-    list-style: none;
-    background-color: #f37141;
+    z-index: 0;
   }
-
-  .cat-one {
-    text-align: center;
-    margin-top: 5px;
-  }
-  .cat-one .fas-fa-bars {
+  .dropdown .fa-fa-bars {
     margin-top: 5px;
   }
 
-  .cat-one:hover .menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: white;
-    color: #929090;
+  .dropdown-content {
+    position: absolute;
+    width: 0;
+    color: white;
+    overflow: hidden;
   }
 
-  .categ-one:hover {
-    color: black;
+  .dropdown:hover .dropdown-content {
+    width: 100%;
+    z-index: 5;
+    margin: 0 -4rem -4rem -4rem;
+    padding: 0 4rem 4rem 4rem;
+    display: block;
   }
 
   .picture {

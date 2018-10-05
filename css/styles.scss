@@ -681,6 +681,7 @@ p {
     body {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
     }
 
@@ -697,7 +698,7 @@ p {
     .list-nav {
         display: none;
     }
-
+    //aca hizo Nati
     .mobile {
         display: flex;
         justify-content: center;
@@ -726,37 +727,66 @@ p {
         color: white;
     }
 
-    .menu {
-        position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px;
-        padding: 12px 18px;
+    .dropdown {
+        position: relative;
         color: white;
-        display: none;
-        text-align: center;
-        list-style: none;
-        background-color: rgb(243, 113, 65);
+        z-index: 0;
+        .fa-fa-bars {
+            margin-top: 5px;
+        }
         
     }
-    .cat-one {
-        text-align: center;
-        margin-top: 5px;
-        .fas-fa-bars {
-            margin-top: 5px;            
-        }
+
+    .dropdown-content {
+        position: absolute;
+        width: 0;
+        color: white;   
+        overflow: hidden; 
     }
 
-    .cat-one:hover .menu {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        background-color: white;
-        color: rgb(146, 144, 144);
+    .dropdown:hover .dropdown-content {
+        width: 100%;
+        z-index: 5;
+        margin: 0 -4rem -4rem -4rem;
+        padding: 0 4rem 4rem 4rem; 
+        display: block;
     }
+    // hasta aca modifico Nati
 
-    .categ-one:hover {
-        color: black;
-    }
+
+    // .menu {
+    //     position: absolute;
+    //     min-width: 160px;
+    //     box-shadow: 0px 8px 16px 0px;
+    //     padding: 12px 18px;
+    //     color: white;
+    //     display: none;
+    //     text-align: center;
+    //     list-style: none;
+    //     background-color: rgb(243, 113, 65);
+        
+    // }
+    // .cat-one {
+    //     text-align: center;
+    //     margin-top: 5px;
+    //     .fas-fa-bars {
+    //         margin-top: 5px;            
+    //     }
+    // }
+
+    // .cat-one:hover . {
+    //     display: flex;
+    //     flex-direction: column;
+    //     list-style: none;
+    //     background-color: white;
+    //     color: rgb(146, 144, 144);
+    // }
+
+    // .categ-one:hover {
+    //     color: black;
+    // }
+
+    
     .picture {
         width: 600px;
         margin: 0%;
