@@ -1,8 +1,8 @@
 body {
   width: 100%;
-  margin: 0%;
   font-size: 15px;
   font-weight: bolder;
+  margin: 0%;
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -13,13 +13,17 @@ body {
 .title h1 {
   font-family: "Indie Flower", cursive;
   color: #f3602a;
+  font-size: 42px;
+}
+
+br {
+  display: none;
 }
 
 .list-nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  padding: 5px;
   position: relative;
 }
 .list-nav .fa-bars {
@@ -31,8 +35,6 @@ body {
 
 .mobile {
   display: none;
-  height: 30%;
-  width: 100%;
 }
 
 .categoria-1 {
@@ -46,6 +48,10 @@ body {
 }
 .categoria-1:hover {
   color: #fc784f;
+}
+
+a {
+  text-decoration: none;
 }
 
 .dropdown {
@@ -73,6 +79,10 @@ body {
   list-style: none;
   background-color: white;
   color: #929090;
+}
+
+.categoria-1 {
+  text-decoration: none;
 }
 
 .categoria-2:hover {
@@ -448,31 +458,41 @@ p {
   z-index: 1;
 }
 .carrousel .hover-box {
+  width: 0;
+  height: 0;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px;
   padding: 12px 16px;
+}
+.carrousel .hover-box .hover-subtitle {
+  display: none;
+}
+.carrousel .hover-box .hover-title {
+  display: none;
 }
 .carrousel .hover-box:hover {
   cursor: pointer;
-  display: block;
   position: absolute;
   background-color: RGBA(221, 75, 57, 0.5);
   width: inherit;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
-.carrousel .hover-box:hover .hover-subtitle {
+.carrousel .hover-box:hover .hover-subtitle:hover {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
-  opacity: 1;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 10px;
 }
 .carrousel .hover-box:hover .hover-title {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
-  opacity: 1;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .carrousel-img:first-of-type {
@@ -560,7 +580,7 @@ p {
 }
 .bio-name-box .bio-name {
   color: black;
-  font-size: 20px;
+  font-size: 32px;
   margin-top: 8%;
   margin-bottom: 6%;
 }
@@ -639,7 +659,6 @@ article .recipe-info .recipe-data {
   border-radius: 10%;
 }
 
-/* agostina */
 @media (max-width: 600px) {
   body {
     display: flex;
@@ -647,9 +666,12 @@ article .recipe-info .recipe-data {
     flex-wrap: nowrap;
     align-items: center;
   }
+  body br {
+    display: inline;
+  }
 
   .title {
-    font-size: 40px;
+    font-size: 32px;
     text-align: center;
     margin-top: 20px;
   }
@@ -667,15 +689,15 @@ article .recipe-info .recipe-data {
     justify-content: center;
     padding: 0px 0px 30px 0px;
   }
-  .mobile .cat-one {
+  .mobile .categoria-2 {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .mobile .cat-one .fa-bars {
+  .mobile .categoria-2 .fa-bars {
     margin-left: 5px;
   }
 
-  .mobile:hover .cat-one .fa-bars {
+  .mobile:hover .categoria-2 .fa-bars {
     cursor: pointer;
   }
 
@@ -719,8 +741,8 @@ article .recipe-info .recipe-data {
     margin: 0%;
   }
   .picture .pic1 {
-    width: 90%;
-    height: 200px;
+    width: auto;
+    height: 100px;
     margin: 0%;
   }
 
@@ -886,7 +908,7 @@ article .recipe-info .recipe-data {
 
   .recipe-name {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 20px;
+    font-size: 28px;
     margin: 2% 0 2% 3%;
   }
 
@@ -959,7 +981,7 @@ article .recipe-info .recipe-data {
     width: 80%;
   }
   .recipes-links .recipe-data {
-    font-size: 16px;
+    font-size: 18px;
   }
   .recipes-links .news {
     width: 100%;
@@ -967,10 +989,17 @@ article .recipe-info .recipe-data {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .recipes-links .recipe1 {
     width: 100%;
     text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .recipes-links .recipe1 .recipe-img {
+    display: none;
   }
   .recipes-links .recipe2 {
     display: none;
