@@ -76,6 +76,10 @@ body {
   color: #929090;
 }
 
+.categoria-1 {
+  text-decoration: none;
+}
+
 .categoria-2:hover {
   color: orangered;
 }
@@ -449,31 +453,41 @@ p {
   z-index: 1;
 }
 .carrousel .hover-box {
+  width: 0;
+  height: 0;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px;
   padding: 12px 16px;
+}
+.carrousel .hover-box .hover-subtitle {
+  display: none;
+}
+.carrousel .hover-box .hover-title {
+  display: none;
 }
 .carrousel .hover-box:hover {
   cursor: pointer;
-  display: block;
   position: absolute;
   background-color: RGBA(221, 75, 57, 0.5);
   width: inherit;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
-.carrousel .hover-box:hover .hover-subtitle {
+.carrousel .hover-box:hover .hover-subtitle:hover {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
-  opacity: 1;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 12px;
+  font-size: 10px;
 }
 .carrousel .hover-box:hover .hover-title {
+  display: flex;
+  flex-wrap: nowrap;
   color: white;
-  opacity: 1;
   font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .carrousel-img:first-of-type {
