@@ -27,7 +27,7 @@ body {
         display: none;
     }
     &:hover {
-        cursor: pointer;    
+        cursor: pointer;
     }
 }
 
@@ -35,6 +35,9 @@ body {
 
 .mobile {
     display: none;
+    height: 30%;
+    width: 100%;
+
 }
 
 // agostina
@@ -43,19 +46,19 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     color: rgb(146, 144, 144);
-    font-size: 14px;  
+    font-size: 14px;
     &:first-of-type {
         color: orangered;
-    }      
+    }
     &:hover {
         color: #fc784f;
       }
-}  
+}
 
 .dropdown{
     margin-left: 10px;
     margin-right: 10px;
-    color: rgb(146, 144, 144); 
+    color: rgb(146, 144, 144);
     font-size: 15px;
     .fas.fa-caret-down {
         margin-left: 6px;
@@ -68,7 +71,7 @@ body {
         color: rgb(146, 144, 144);
         display: none;
 		margin: 0;
-    }      
+    }
 }
 
 .dropdown:hover .dropdown-content{
@@ -83,11 +86,11 @@ body {
     color: orangered;
 }
 
-// / *agostina* / 
+// / *agostina* /
 .categoria-mobile {
     display: none;
 }
-// / *agostina* / 
+// / *agostina* /
 
 .main {
     width: 100%;
@@ -259,7 +262,7 @@ body {
         width: 150px;
         display: flex;
         justify-content: space-around;
-        margin-top: 25px;
+        margin-top: 10px;
         color: rgb(146, 144, 144);
     }
 }
@@ -307,10 +310,10 @@ h4 {
     justify-content: space-around;
     padding: 10px 20px 20px 20px;
     color: rgb(80, 76, 76);
-    font-size: 14px;
+    font-size: 12px;
     opacity: 0.5;
     filter: Alpha(opacity=50);
-    .contacts {
+    .contact {
         margin-left: 10px;
     }
 }
@@ -320,7 +323,7 @@ h4 {
     display: flex;
     align-items: center;
     &:hover {
-        display: block; 
+        display: block;
         color: #02194b;
         cursor: pointer;
     }
@@ -378,11 +381,15 @@ h4 {
 
 // agostina
 
-.fa-arrow-circle-up {
-    display: none;
+.arrow-up {
+  display: none;
 }
 
-// agostina 
+// .fa-arrow-circle-up {
+//     display: none;
+// }
+
+// agostina
 
 hr {
     color: rgb(207, 204, 204);
@@ -565,7 +572,7 @@ p {
       margin-bottom: 10%;
       }
 	}
-	
+
 	.recipes-links {
 		width: 80%;
 		height: auto;
@@ -577,9 +584,9 @@ p {
 			 width: 65%;
 			 margin-left: 1.5%;
 		 }
-	
+
 	}
-	
+
 	article{
 		display: flex;
 		justify-content: flex-start;
@@ -596,7 +603,7 @@ p {
 				width: 100%;
 			}
 		}
-	
+
 	.recipe-info {
 		width: 60%;
 		display: flex;
@@ -620,7 +627,7 @@ p {
 			}
 		}
 	}
-	
+
 	.recipe-name {
 		font-family: 'IBM Plex Mono', monospace;
 		font-size: 20px;
@@ -650,6 +657,7 @@ p {
         text-align: center;
         h1 {
             margin: 0%;
+            width: 100%;
         }
     }
 
@@ -657,7 +665,7 @@ p {
         display: none;
     }
 
-        
+
     .mobile {
         display: block;
         .cat-one {
@@ -665,7 +673,7 @@ p {
             margin-right: 10px;
             .fa-bars {
                 margin-left: 5px;
-            } 
+            }
         }
 
     }
@@ -691,7 +699,7 @@ p {
     .categ-one {
         color: orange;
     }
-    
+
     .picture {
         width: 600px;
         margin: 0%;
@@ -735,8 +743,8 @@ p {
         }
         .second-pic-container {
             display: flex;
-            justify-content: center;  
-            width: 75%; 
+            justify-content: center;
+            width: 75%;
             margin: 0%;
             .second-pic {
                 height: 100%;
@@ -767,22 +775,41 @@ p {
 }
 
 footer {
+
     .redes-sociales {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
         p {
             display: none;
         }
     }
 }
 
+.arrow-and-line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    hr {
+      position: absolute;
+      margin-top: 0;
+      z-index: 0;
+    }
+}
+
 .arrow-up {
-    display: block;
-    position: absolute;
-    font-size: 20px;
-    margin-top: 68px;
-    background-color: white;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  justify-content: center;
+  background-color: white;
     .fa-arrow-circle-up {
-        color: orangered;
-        z-index: 1;
+      font-size: 30px;
+      color: orangered;
+      z-index: 1;
     }
 }
 
@@ -793,7 +820,7 @@ footer {
       font-size: 13px;
       margin-bottom: 10%;
     }
-  
+
 
     .recipes-links {
         width: 80%;
@@ -865,7 +892,7 @@ article{
 // Camila
 // fin Camila
 
-//pam 
+//pam
   .list-nav {
     display: none;
     }
@@ -896,14 +923,14 @@ article{
         margin-top: 10px;
         align-items: center;
         }
-      }	
+      }
   .vid {
     display: none;
     }
   .bio {
     width: 100%;
 		}
-	
+
   .recipes-links {
 		width: 100%;
 		margin-left: 0;
@@ -928,15 +955,15 @@ article{
         align-items: center;
         justify-content: center;
 	}
-		
+
 	.recipe1 {
         width: 100%;
-        text-align: center; 
+        text-align: center;
     }
 	// .recipe-img {
-	// 	display: none; 
+	// 	display: none;
 	// }
-	
+
 	.recipe2 {
 	    display: none;
 	}
