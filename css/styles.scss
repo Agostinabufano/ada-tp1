@@ -654,21 +654,21 @@ p {
 		display: flex;
 		flex-direction: column;
 		margin-left: 4%;
-			.news {
-				background-color: #FDE2DA;
-				width: 28%;
-				height: 15%;
-				margin-top: 8%;
-				font-weight: bold;
-				font-size: 10px;
-				color: black;
-				border-radius: 8px;
-				cursor: pointer;
-			}
-			.recipe-data {
-				color: $ourgray;
-				font-family: 'IBM Plex Mono', monospace;
-				font-size: 12px;
+		.news {
+			background-color: #FDE2DA;
+			width: 28%;
+			height: 15%;
+			margin-top: 8%;
+			font-weight: bold;
+			font-size: 10px;
+			color: black;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+		.recipe-data {
+			color: $ourgray;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 12px;
 			}
 		}
 	}
@@ -688,246 +688,243 @@ p {
 		border-radius: 10%;
 	}
 
-/* agostina */
+// agostina y pam
 
 @media (max-width:600px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .title {
-        font-size: 32px;
-        text-align: center;
-        margin-top: 20px;
-        h1 {
-            margin: 0%;
-            width: 100%;
-        }
+  .title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    h1 {
+    	margin: 0%;
+      width: 100%;
+      }
     }
 
-    .list-nav {
-        display: none;
+  .list-nav {
+    display: none;
     }
 
-    .mobile {
-        display: flex;
-        justify-content: center;
-        padding: 0px 0px 30px 0px;
-        .cat-one {
-            margin-left: 10px;
-            margin-right: 10px;
-            .fa-bars {
-                margin-left: 5px;
-            } 
-        }
-    }
-
-    .mobile:hover .cat-one .fa-bars{
-        cursor: pointer;
-    }
-
-    .boton-menu {
-        width: 300px;
-        height: 30px;
-        background-color: rgb(243, 113, 65);
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        border-radius: 10px;
-        color: white;
-    }
-
-    .menu {
-        position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px;
-        padding: 12px 18px;
-        color: white;
-        display: none;
-        text-align: center;
-        list-style: none;
-        background-color: rgb(243, 113, 65);
-        
-    }
+  .mobile {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 30px 0px;
     .cat-one {
-        text-align: center;
-        margin-top: 5px;
-        .fas-fa-bars {
-            margin-top: 5px;            
-        }
+    	margin-left: 10px;
+      margin-right: 10px;
+      .fa-bars {
+      margin-left: 5px;
+      } 
+    }
+    }
+
+  .mobile:hover .cat-one .fa-bars{
+    cursor: pointer;
+    }
+
+  .boton-menu {
+    width: 300px;
+    height: 30px;
+    background-color: rgb(243, 113, 65);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 10px;
+    color: white;
+    }
+
+  .menu {
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    padding: 12px 18px;
+    color: white;
+    display: none;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(243, 113, 65);
+    }
+  .cat-one {
+    text-align: center;
+    margin-top: 5px;
+    .fas-fa-bars {
+    	margin-top: 5px;            
+      }
     }
 
     .cat-one:hover .menu {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        background-color: white;
-        color: rgb(146, 144, 144);
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      background-color: white;
+      color: rgb(146, 144, 144);
     }
 
     .categ-one:hover {
-        color: black;
+      color: black;
     }
     .picture {
-        width: 600px;
+      width: 600px;
+      margin: 0%;
+      .pic1 {
+        width: 90%;
+        height: 200px;
         margin: 0%;
-        .pic1 {
-            width: 90%;
-            height: 200px;
-            margin: 0%;
         }
     }
 
-    .container-list {
-       display: flex;
-       flex-direction: column;
-       width: 70%;
-       margin: auto;
-       .list-items {
-           width: 100%;
-           display: flex;
-           margin:20px;
-           margin-left: 0%;
-       }
+  .container-list {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+     .list-items {
+      width: 100%;
+      display: flex;
+      margin:20px;
+      margin-left: 0%;
+      }
    }
 
-   .container {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin-top: 0%;
-       margin: 0%;
-       .redes {
-           margin-right: 0%;
-       }
-       .iconos {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            margin: 0%;
-            padding: 0%;
-            align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin: 0%;
+    .redes {
+      margin-right: 0%;
+      }
+    .iconos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+      align-items: center;
+      }
+    .second-pic-container {
+      display: flex;
+      justify-content: center;
+      width: 75%;
+      margin: 0%;
+      .second-pic {
+        height: 100%;
+        width: 80%;
         }
-        .second-pic-container {
-            display: flex;
-            justify-content: center;
-            width: 75%;
-            margin: 0%;
-            .second-pic {
-                height: 100%;
-                width: 80%;
-            }
-        }
+      }
    }
 
-.main-container {
+	.main-container {
     margin: 0%;
     width: 60%;
     align-content: center;
     .datos {
-        width: 100%;
-    }
-}
+      width: 100%;
+    	}
+	}
 
-.contenedor {
+	.contenedor {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     .contenido-text {
-        h2 {
-            margin: 0%;
-        }
+      h2 {
+       margin: 0%;
+       }
     }
-}
+	}
 
-footer {
-
-    .redes-sociales {
+	footer {
+  	.redes-sociales {
       width: 100%;
       display: flex;
       justify-content: space-between;
-        p {
-            display: none;
+      p {
+        display: none;
         }
     }
-}
+	}
 
-.arrow-and-line {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+	.arrow-and-line {
+  	width: 100%;
+ 		display: flex;
+ 	 	justify-content: center;
+  	align-items: center;
+  	position: relative;
     hr {
       position: absolute;
       margin-top: 0;
       z-index: 0;
     }
-}
+	}
 
-.arrow-up {
-  width: 30px;
-  height: 30px;
-  display: block;
-  position: absolute;
-  justify-content: center;
-  background-color: white;
+	.arrow-up {
+  	width: 30px;
+  	height: 30px;
+  	display: block;
+  	position: absolute;
+  	justify-content: center;
+  	background-color: white;
     .fa-arrow-circle-up {
       font-size: 30px;
       color: orangered;
       z-index: 1;
-    }
-}
+    	}
+	}
 
 /* agostina */
 
-    .bio-data {
-      color: $ourgray;
-      font-size: 13px;
-      margin-bottom: 10%;
+  .bio-data {
+    color: $ourgray;
+    font-size: 13px;
+    margin-bottom: 10%;
     }
 
-
-    .recipes-links {
-        width: 80%;
-        height: auto;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 5%;
-        margin-bottom: 2%;
-        .articles {
-            width: 65%;
-            margin-left: 1.5%;
-        }
+  .recipes-links {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    .articles {
+      width: 65%;
+      margin-left: 1.5%;
+      }
     }
 
-article{
-	display: flex;
-  justify-content: flex-start;
-  margin-top: 2%;
-	margin-left: 0%;
-	margin-right: 0;
-  width: 100%;
-  border-top: 1.2px solid #d6d6c2;
-  padding-top: 4%;
-	.recipe-img {
-		width: 40%;
-		img {
-			border-radius: 10%;
-      width: 100%;
+	article{
+		display: flex;
+  	justify-content: flex-start;
+  	margin-top: 2%;
+		margin-left: 0%;
+		margin-right: 0;
+  	width: 100%;
+  	border-top: 1.2px solid #d6d6c2;
+  	padding-top: 4%;
+		.recipe-img {
+			width: 40%;
+			img {
+				border-radius: 10%;
+    	  width: 100%;
+				}
+			}
 		}
-	}
-}
-.recipe-info {
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-  margin-left: 4%;
+	.recipe-info {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+  	margin-left: 4%;
     .news {
       background-color: #FDE2DA;
       width: 28%;
@@ -938,67 +935,73 @@ article{
       color: black;
       border-radius: 8px;
       cursor: pointer;
-		.recipe-data {
-			color: $ourgray;
-			font-family: 'IBM Plex Mono', monospace;
-			font-size: 12px;
-		}
+			.recipe-data {
+				color: $ourgray;
+				font-family: 'IBM Plex Mono', monospace;
+				font-size: 12px;
+				}
+			}
 	}
-}
 
-.recipe-name {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 28px;
-  margin: 2% 0 2% 3%;
-}
-.news {
-  border: none;
-  color: #fc784f;
-  text-align: center;
-  color: darkslategray;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
-  border-radius: 10%;
-}
+	.recipe-name {
+  	font-family: 'IBM Plex Mono', monospace;
+  	font-size: 28px;
+  	margin: 2% 0 2% 3%;
+		}
+
+	.news {
+  	border: none;
+  	color: #fc784f;
+  	text-align: center;
+  	color: darkslategray;
+  	font-family: 'IBM Plex Mono', monospace;
+  	font-size: 12px;
+  	border-radius: 10%;
+		}
 // Camila
 // fin Camila
 
 //pam
   .list-nav {
     display: none;
-    }
+		}
+		
   .carrousel {
     display: flex;
     .carrousel-img {
       display: none;
       }
       .carrousel-img-mobile {
-      display: block;
-      width: 100%;
-      height: auto;
+    	  display: block;
+    	  width: 100%;
+    	  height: auto;
       }
     }
-    .recipe-bio {
-      display: flex;
-      flex-direction: column-reverse;
-      width: 100%;
+	
+	.recipe-bio {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    }
+		
+	.recipes {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    .recipes-sec {
+      margin-top: 10px;
+      align-items: center;
       }
-    .recipes {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 10px;
-      width: 100%;
-      margin-left: 0%;
-      margin-right: 0%;
-      .recipes-sec {
-        margin-top: 10px;
-        align-items: center;
-        }
-      }
-  .vid {
+    }
+	
+	.vid {
     display: none;
     }
-  .bio {
+ 
+	.bio {
     width: 100%;
 		}
 
@@ -1007,43 +1010,40 @@ article{
 		margin-left: 0;
 		margin-right: 0;
 		.articles {
-		width: 100%;
-        margin-left: 0;
-    }
-	article {
-    justify-content: center;
-    }
-	.recipe-info {
-		width: 80%;
-	}
-	.recipe-data {
-		font-size: 18px;
-	}
-	.news {
-        width: 100%;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-	}
-
-  .recipe1 {
+			width: 100%;
+      margin-left: 0;
+   	 	}
+		article {
+    	justify-content: center;
+    	}
+		.recipe-info {
+			width: 80%;
+		}
+		.recipe-data {
+			font-size: 18px;
+		}
+		.news {
+      width: 100%;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+			margin-left: auto; //chequear no haber roto nada
+			margin-right: auto;
+		}
+	.recipe1 {
     width: 100%;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
     .recipe-img{
-    display: none;
-    }
-  }
+  	  display: none;
+    	}
+  	}
   .recipe2 {
     display: none;
     }
-    .news {
-      margin-left: auto;
-      margin-right: auto;
-			}
-		}
+  }
 }
 
 
