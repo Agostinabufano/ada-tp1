@@ -444,6 +444,29 @@ p {
 .carrousel .carrousel-img img {
   width: 100%;
 }
+.carrousel .hover-box {
+  display: none;
+}
+.carrousel .hover-box:hover {
+  display: block;
+  position: absolute;
+  background-color: RGBA(221, 75, 57, 0.5);
+  width: inherit;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.carrousel .hover-box:hover .hover-subtitle {
+  color: white;
+  opacity: 1;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+}
+.carrousel .hover-box:hover .hover-title {
+  color: white;
+  opacity: 1;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+}
 
 .carrousel-img:first-of-type {
   margin-left: 0;
