@@ -81,10 +81,6 @@ a {
   color: #929090;
 }
 
-.categoria-1 {
-  text-decoration: none;
-}
-
 .categoria-2:hover {
   color: orangered;
 }
@@ -692,6 +688,7 @@ article .recipe-info .recipe-data {
   .mobile .categoria-2 {
     margin-left: 10px;
     margin-right: 10px;
+    list-style: none;
   }
   .mobile .categoria-2 .fa-bars {
     margin-left: 5px;
@@ -707,33 +704,31 @@ article .recipe-info .recipe-data {
     background-color: #f37141;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     border-radius: 10px;
     color: white;
   }
 
   .dropdown {
-    position: relative;
     color: white;
-    z-index: 0;
   }
   .dropdown .fa-fa-bars {
-    margin-top: 5px;
+    margin-right: 15px;
   }
 
   .dropdown-content {
-    position: absolute;
-    width: 0;
-    color: white;
-    overflow: hidden;
+    left: 100px;
+    display: flex;
+    align-items: center;
   }
 
   .dropdown:hover .dropdown-content {
-    width: 100%;
-    z-index: 5;
-    margin: 0 -4rem -4rem -4rem;
-    padding: 0 4rem 4rem 4rem;
-    display: block;
+    background-color: #f37141;
+    color: white;
+  }
+
+  .dropdown:hover {
+    color: black;
   }
 
   .picture {
@@ -757,6 +752,10 @@ article .recipe-info .recipe-data {
     display: flex;
     margin: 20px;
     margin-left: 0%;
+  }
+
+  .navs {
+    list-style: none;
   }
 
   .container {
@@ -842,7 +841,7 @@ article .recipe-info .recipe-data {
   .arrow-up .fa-arrow-circle-up {
     font-size: 30px;
     color: orangered;
-    z-index: 1;
+    overflow: hidden;
   }
 
   /* agostina */

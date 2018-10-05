@@ -84,10 +84,8 @@ a {
     list-style: none;
     background-color: white;
     color: rgb(146, 144, 144);
-    }
-.categoria-1 { //no funciona
-    text-decoration: none;
 }
+
 .categoria-2:hover {
     color: orangered;
 }
@@ -719,6 +717,7 @@ p {
   .list-nav {
     display: none;
     }
+
     //aca hizo Nati
     .mobile {
         display: flex;
@@ -727,6 +726,7 @@ p {
         .categoria-2 {
             margin-left: 10px;
             margin-right: 10px;
+            list-style: none;
             .fa-bars {
                 margin-left: 5px;
             } 
@@ -743,34 +743,33 @@ p {
         background-color: rgb(243, 113, 65);
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
         border-radius: 10px;
         color: white;
     }
 
     .dropdown {
-        position: relative;
         color: white;
-        z-index: 0;
         .fa-fa-bars {
-            margin-top: 5px;
+            margin-right:15px;
         }  
     }
 
     .dropdown-content {
-        position: absolute;
-        width: 0;
-        color: white;   
-        overflow: hidden; 
+        left: 100px;
+        display: flex;
+        align-items: center;
     }
 
     .dropdown:hover .dropdown-content {
-        width: 100%;
-        z-index: 5;
-        margin: 0 -4rem -4rem -4rem;
-        padding: 0 4rem 4rem 4rem; 
-        display: block;
+        background-color: rgb(243, 113, 65);
+        color: white;
     }
+
+    .dropdown:hover {
+        color: black;
+    }  
+    
     // hasta aca modifico Nati
     
     .picture {
@@ -794,6 +793,10 @@ p {
       margin:20px;
       margin-left: 0%;
       }
+   }
+
+   .navs {
+       list-style: none;
    }
 
   .container {
@@ -861,14 +864,15 @@ p {
 
 	.arrow-and-line {
   	width: 100%;
- 		display: flex;
- 	 	justify-content: center;
+ 	display: flex;
+ 	justify-content: center;
   	align-items: center;
   	position: relative;
     hr {
       position: absolute;
-      margin-top: 0;
+      margin-top: 0;      
       z-index: 0;
+      
     }
 	}
 
@@ -882,7 +886,7 @@ p {
     .fa-arrow-circle-up {
       font-size: 30px;
       color: orangered;
-      z-index: 1;
+      overflow: hidden;
     	}
 	}
 
