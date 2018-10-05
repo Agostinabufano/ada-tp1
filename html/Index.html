@@ -17,19 +17,32 @@
         <h1>Mi Blog de Cocina</h1>
       </div>
       <nav>
-        <ul class="list-nav">
-          <li class="categoria-1">HOME</li>
-          <li class="dropdown">PLATOS<i class="fas fa-caret-down"></i>
+          <ul class="list-nav">
+            <i class="fas fa-bars"></i>
+           <a class="link-index" href="index.html">  <li class="categoria-1">HOME</li></a>
+            <li class="dropdown">PLATOS<i class="fas fa-caret-down"></i>
+              <ul class="dropdown-content">
+                  <li class="categoria-2">ENSALADA</li>
+                  <li class="categoria-2">CARNE</li>
+                  <li class="categoria-2">HELADOS</li>
+              </ul>
+            </li>
+            <li class="categoria-1">SOBRE MÍ</li>
+            <li class="categoria-1">CONTACTO</li>
+          </ul>
+      </nav>
+      <nav class="mobile">
+        <div class="boton-menu">
+          <span class="dropdown">MENU <i class="fas fa-bars"></i>
             <ul class="dropdown-content">
-                <li class="categoria-2">ENSALADA</li>
-                <li class="categoria-2">CARNE</li>
-                <li class="categoria-2">HELADOS</li>
+                <li class="categoria-2">HOME</li>
+                <li class="categoria-2">PLATOS</li>
+                <li class="categoria-2">SOBRE MI</li>
+                <li class="categoria-2">CONTACTO</li>
             </ul>
-          </li>
-          <li class="categoria-1">SOBRE MÍ</li>
-          <li class="categoria-1">CONTACTO</li>
-        </ul>
-        </nav>
+          </span>
+        </div>
+      </nav>
     </header>
 <!-- Natalia -->
 <!-- Camila y Pamina -->
@@ -97,7 +110,7 @@
   <div class="recipe-bio">
     <section class="vid-bio">
         <div class="vid">
-            <iframe  src="https://www.youtube.com/embed/iu0pewX67mE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe  src="https://www.youtube.com/embed/iu0pewX67mE" frameborder="0" allowfullscreen></iframe>
             <figcaption>20 de abril | ¿Cómo preparar las mejores hamburguesas?</figcaption>
         </div>
         <div class="bio">
@@ -194,10 +207,10 @@
       </div>
     </footer>
     <div class="arrow-and-line">
+      <hr>
       <div class="arrow-up">
         <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
       </div>
-      <hr>
     </div>
   <!-- Natalia -->
   </body>
