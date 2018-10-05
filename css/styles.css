@@ -31,6 +31,8 @@ body {
 
 .mobile {
   display: none;
+  height: 30%;
+  width: 100%;
 }
 
 .categoria-1 {
@@ -301,7 +303,7 @@ h4 {
   filter: Alpha(opacity=50);
 }
 .redes-sociales .contact {
-  margin-left: 12px;
+  margin-left: 10px;
 }
 
 .redes-f {
@@ -365,7 +367,7 @@ h4 {
   cursor: pointer;
 }
 
-.fa-arrow-circle-up {
+.arrow-up {
   display: none;
 }
 
@@ -652,6 +654,7 @@ article .recipe-info .recipe-data {
   }
   .title h1 {
     margin: 0%;
+    width: 100%;
   }
 
   .list-nav {
@@ -791,18 +794,38 @@ article .recipe-info .recipe-data {
     margin: 0%;
   }
 
+  footer .redes-sociales {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   footer .redes-sociales p {
     display: none;
   }
 
+  .arrow-and-line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .arrow-and-line hr {
+    position: absolute;
+    margin-top: 0;
+    z-index: 0;
+  }
+
   .arrow-up {
+    width: 30px;
+    height: 30px;
     display: block;
     position: absolute;
-    font-size: 20px;
-    margin-top: 68px;
+    justify-content: center;
     background-color: white;
   }
   .arrow-up .fa-arrow-circle-up {
+    font-size: 30px;
     color: orangered;
     z-index: 1;
   }
